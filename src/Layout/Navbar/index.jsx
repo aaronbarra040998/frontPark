@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { NavLink } from 'react-router-dom'; // Importar NavLink
 import './Navbar.css';
 import logo from "./logo_turk.svg";
 
@@ -6,7 +7,7 @@ class Navbar extends Component {
   state = { clicked: false };
 
   handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });  // Corrigiendo el error de sintaxis aquí
+    this.setState({ clicked: !this.state.clicked });
   };
 
   render() {
@@ -14,14 +15,19 @@ class Navbar extends Component {
       <>
         <nav>
           <a href="/">
-          <img className='logotip' src={logo} alt="Logo" />
-
+            <img className='logotip' src={logo} alt="Logo" />
           </a>
           <div>
-            <ul id='navbar' className={this.state.clicked?"#navbar active":"#navbar"}>
-              <li><a className='active' href="/">home</a></li>
-              <li><a href="/preinscription">about</a></li>
-              <li><a href="/">download</a></li>
+            <ul id='navbar' className={this.state.clicked ? "#navbar active" : "#navbar"}>
+              <li>
+                <NavLink exact to="/" activeClassName="active">home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/preinscription" activeClassName="active">about</NavLink>
+              </li>
+              <li>
+                <NavLink to="/download" activeClassName="active">download</NavLink>
+              </li>
             </ul>
           </div>
           <div id="mobile" onClick={this.handleClick}>

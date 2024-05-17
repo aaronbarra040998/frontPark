@@ -1,6 +1,6 @@
 .logotip {
-    width: 80px;
-    height: 100px;
+    width: 210px;
+    height: 70px;
     /* Considera añadir propiedades como margen, relleno o bordes según el diseño */
     transition: transform 0.3s ease; /* Agregamos la transición al estado normal */
 }
