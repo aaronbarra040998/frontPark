@@ -17,6 +17,7 @@ class Navbar extends Component {
           <a href="/">
             <img className='logotip' src={logo} alt="Logo" />
           </a>
+          aaaaaa
           <div>
             <ul id='navbar' className={this.state.clicked ? "#navbar active" : "#navbar"}>
               <li>
