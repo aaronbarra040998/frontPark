@@ -17,17 +17,13 @@ class Navbar extends Component {
           <a href="/">
             <img className='logotip' src={logo} alt="Logo" />
           </a>
-          aaaaaa
           <div>
             <ul id='navbar' className={this.state.clicked ? "#navbar active" : "#navbar"}>
               <li>
                 <NavLink exact to="/" activeClassName="active">home</NavLink>
               </li>
               <li>
-                <NavLink to="/preinscription" activeClassName="active">about</NavLink>
-              </li>
-              <li>
-                <NavLink to="/download" activeClassName="active">download</NavLink>
+                <NavLink to="/preinscription" activeClassName="active">about US</NavLink>
               </li>
             </ul>
           </div>

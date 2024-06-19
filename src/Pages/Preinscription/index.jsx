@@ -5,6 +5,7 @@ import Testimonial from '@/components/Testimonial'
 export default function Preinscription() {
   return (
     <>
+
       <div className='mx-auto max-w-screen-lg md:w-full md:max-w-4xl py-10'>
         <article className='pt-36 pb-14 text-6xl font-bold text-center'>
           <span className='text-card-bg'>NUESTRO EQUIPO</span>
@@ -19,7 +20,7 @@ export default function Preinscription() {
             imgback4='https://media.licdn.com/dms/image/D4E03AQGR4d200ANFKA/profile-displayphoto-shrink_800_800/0/1715571062837?e=1721260800&v=beta&t=yoRO0UZllZ8jOaVVnDnua6d0dunMDxBKW3C-Ku1AWK0'
             linkdlind='https://www.linkedin.com/in/dante-samuel-rodriguez-chambi-444041279/'
             imgback5='https://media.licdn.com/dms/image/D4D03AQGEwAnxgodh8g/profile-displayphoto-shrink_800_800/0/1685929786505?e=1721260800&v=beta&t=gnQ6XR-9ZVHUxq_XGHo_sN6Vt5KrCmTgEWboiuojXbk'
-            imgdevops1='https://media.licdn.com/dms/image/D4E35AQGtYZYxcMQTIw/profile-framedphoto-shrink_800_800/0/1713551875414?e=1716577200&v=beta&t=f7R_mpoCGhlzt6BWihsiU38jlJfLajrjj-AreCvLW7k'
+            imgdevops1='https://media.licdn.com/dms/image/D4E35AQGtYZYxcMQTIw/profile-framedphoto-shrink_800_800/0/1713551875414?e=1719388800&v=beta&t=V_x-ZYhPyOwuvojhOPHWUPAwn4qhiptK10JzqQ7Xgdc'
             imgdoc='https://media.licdn.com/dms/image/D4E03AQEbP9bkxbTOcg/profile-displayphoto-shrink_800_800/0/1713669688871?e=1721260800&v=beta&t=tERTjCOtvQB6ECQ4evESORKwrF_yP-ARvuk6HNR2QFs'
             name=''
           />
@@ -33,7 +34,7 @@ export default function Preinscription() {
           />
           <Card
             name='Andre Gacia Aragon'
-            img='https://media.licdn.com/dms/image/D4E35AQGtYZYxcMQTIw/profile-framedphoto-shrink_800_800/0/1713551875414?e=1716577200&v=beta&t=f7R_mpoCGhlzt6BWihsiU38jlJfLajrjj-AreCvLW7k'
+            img='https://media.licdn.com/dms/image/D4E35AQGtYZYxcMQTIw/profile-framedphoto-shrink_800_800/0/1713551875414?e=1719388800&v=beta&t=V_x-ZYhPyOwuvojhOPHWUPAwn4qhiptK10JzqQ7Xgdc'
             github='https://github.com/andregarci'
           />
           <Card

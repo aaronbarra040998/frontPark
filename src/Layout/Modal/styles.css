@@ -3,14 +3,11 @@ body {
   font-family: "Euclid Circular A", "Poppins";
 }
 
-
-
 .page.modal-1-page {
   background: #ffffff;
 }
 
 .container {
-  /* position: relative; */
   max-width: 700px;
   margin: 0 auto;
   padding-top: 1%;
@@ -21,12 +18,9 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  /* height: 50vh; */
   padding-bottom: 20px;
   background: #ffffff;
   color: #000000;
-
-  
 }
 
 .modal-1-footer article {
@@ -52,20 +46,15 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
   width: 100%;
   height: 56px;
-  /* background-color: #443660; */
   border: 0;
   border-radius: 15px;
   color: #ffffff;
   font-family: inherit;
   font-size: 16px;
   border: 2px solid #ffffff;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
 }
 
 .modal-1-footer section {
@@ -87,22 +76,82 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-@media (width > 480px) {
-  .modal-1-footer article button {
-    width: 70%;
+.modal-1-footer section.top ul li {
+  display: flex;
+  align-items: center;
+}
+
+.modal-1-footer section.top ul li .logotipo {
+  width: 40px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+  margin-right: 10px;
+}
+
+.modal-1-footer section.top ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.modal-1-footer section.top ul li .buttons-section {
+  display: flex;
+  align-items: center;
+}
+
+.modal-1-footer section.top ul li .buttons-section .parking,
+.modal-1-footer section.top ul li .buttons-section .propietario {
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal-1-footer section.top ul li .buttons-section .separator {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .modal-1-footer section.top {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .modal-1-footer section.top ul {
-    padding-right: 10%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .modal-1-footer section.top ul li .buttons-section {
+    margin-top: 10px;
+  }
+
+  .modal-1-footer section.top ul li .buttons-section .parking,
+  .modal-1-footer section.top ul li .buttons-section .propietario {
+    width: 100%;
+    text-align: center;
+  }
+
+  .modal-1-footer section.top ul li .buttons-section .separator {
+    display: none;
   }
 }
 
-@media (width > 600px) {
+@media (min-width: 481px) {
+  .modal-1-footer article button {
+    width: 70%;
+  }
+}
+
+@media (min-width: 600px) {
   .modal-1-footer article {
     flex-direction: row;
     min-height: 140px;
@@ -119,12 +168,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
     padding-right: 0;
   }
-}
-
-.modal-1-footer section.top ul li a {
-  display: block;
-  margin-bottom: 18px;
-  color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-1-footer section.top h3 {
@@ -206,7 +249,7 @@ body {
 }
 
 .modal-1-modal header {
-  background: linear-gradient(90deg,#3bb29e ,#5be6cf );
+  background: linear-gradient(90deg, #3bb29e, #5be6cf);
   margin: -85px -20px 30px;
   border-radius: 12px;
   height: 170px;
@@ -250,9 +293,6 @@ body {
   color: #96939c;
   pointer-events: none;
 }
-.modal-1-modal .textbox button {
-  background-color: #000000;
-}
 
 .modal-1-modal input {
   position: absolute;
@@ -275,4 +315,22 @@ body {
 .modal-1-modal > p {
   color: #96939c;
   margin: 30px 0 0;
+}
+
+.modal-1-modal .textbox button {
+  background-color: #000000;
+}
+
+.full-button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  background-color: #2cd6bb;
+  border-radius: 5px;
 }
